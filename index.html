@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <title>personal portifolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/587599ea05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.jpeg" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Student</p>
+        <h1>Hi, I'm <span>Sriya</span><br>from India</h1>
+    </div>
+</div>
+</div>
+<!-------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+             <img src="images/userss.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi I'm Solasa Sriya from tadepalligudem <br>pursuing B.tech final year in the stream of computer science and engineering<br>  in sri vasavi engineering college tadepalligudem.<br>
+                     </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>java</li>
+                    <li><span>web development</span><br>html css js</li>
+                    <li>python</li>
+                    <li>c++</li>
+                    <li>c</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li>I am fresher and done some certifications</li>
+                    <li><span>certifications</span><br>1.NPTEL online certification By IIT Madras for "PROBLEM SOLVING THROUGH PROGRAMMING IN C"<br> 2.NPTEL online certification By IIT Madras for "PROGRAMMING IN JAVA". <br>3.APSSDC online training program on "PYTHON PROGRAMMING". <br>4.COURSERA certification for "INTRODUCTION TO HTML5".<br> 5.Attended workshop on "Aws-Cloud Computing" conducted by APSSDC. <br>6.NPTEL online certification By IIT Madras for "PYTHON FOR DATA SCIENCE".</li>
+                    
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>btech(CSE)</span><br>sri vasavi engineering college cgpa-8.95</li>
+                    <li><span>intermediate(MPC)</span><br>sri chautanya junior college cgpa-9.5</li>
+                    <li><span>ssc</span><br>sri chaitanya techno school cgpa-9.8</li>
+                    
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------projects-------->\
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>RESUME PARSER USING NLP</h2>
+                <p>Job Requirements is considered one of the major activities for humans which is Avery strenuous job to find a fruitful talent.our proposed model is basically to extract the details and statistics from the resume and give match percentage of the resume based on the preference of the company (job description)and requirements using Natural Language Processing</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>DUPLICATE QUESTION PAIR DETECTION USING NLP AND MACHINE LEARNING.</h2>
+                <p>In this project we have a fairly large data set of question-pairs that has been labeled (by humans) as “duplicate” or “not duplicate.” We could then use natural language processing (NLP) techniques to extract the difference in meaning or intent of each question-pair, use machine learning (ML) to learn from the human-labeled data, and predict whether a new pair of questions is duplicate or not</p>
+                <a href="http://localhost:8501">website</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>personal portifolio</h2>
+                <p>A portfolio is a living and changing collection of records that reflect your accomplishments, skills, experiences, and attributes. It highlights and showcases samples of some of your best work, along with life experiences, values and achievements.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">contact me<br></h1>
+               <p><i class="fa-solid fa-paper-plane"></i>19a81a05p4@sves.org.in<br></p>
+               <p><i class="fa-sharp fa-solid fa-phone"></i>12345678<br></p>
+                <div class="social-icons">
+                <a href="https://www.linkedin.com/in/solasa-sriya-7a0007211/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-solid fa-mailbox"></i><br></a>
+
+                </div>
+              <a href="images/Solasa Sriya (19A81A05P4) B.Tech CSE 2019-23..pdf" download class="btn btn2">Download Resume</a>
+           </div>  
+        </div>
+        
+    </div>
+    
+</div>
+<script>
+     var tablinks=document.getElementsByClassName("tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove('active-link')
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove('active-tab')
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+
+</script>
+</body>
+</html>
